@@ -85,7 +85,6 @@ Manages user accounts, authentication, and authorization.
 ```
 # Key Dependencies
 - Express.js
-- JWT for authentication
 ```
 
 ### Dashboard Service
