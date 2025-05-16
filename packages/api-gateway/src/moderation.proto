@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package moderation;
+
+service ModerationService {
+  rpc ModerateContent (ModerationRequest) returns (ModerationResponse);
+}
+
+message ModerationRequest {
+  string content = 1;
+  string type = 2; // "text" or "image"
+}
+
+message ModerationResponse {
+  repeated Score scores = 1;
+}
+
+message Score {
+  string label = 1;
+  float score = 2;
+}

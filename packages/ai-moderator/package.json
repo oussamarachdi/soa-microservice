@@ -1,0 +1,17 @@
+{
+  "name": "@content-moderation/ai-moderator",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "kafkajs": "^2.2.4",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.1.4"
+  }
+}

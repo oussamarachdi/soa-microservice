@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package moderationPackage; // Optional package name to match the code
+
+service ModerationService {
+  rpc ModerateText (TextRequest) returns (ModerationResponse) {}
+}
+
+message TextRequest {
+  string text = 1;
+}
+
+message ModerationResponse {
+  bool isToxic = 1;
+  repeated Score scores = 2;
+}
+
+message Score {
+  string label = 1;
+  float score = 2;
+}

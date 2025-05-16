@@ -1,0 +1,6 @@
+{
+  "name": "@shared/config",
+  "version": "1.0.0",
+  "description": "Shared configuration for content moderation pipeline",
+  "main": "index.js"
+}
